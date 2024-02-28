@@ -482,6 +482,14 @@ a:focus {
     border-radius: 5px;
 }
 
+#before_wipe{
+    display: none;
+}
+
+#after_wipe{
+    display: block;
+}
+
 
 /*******************************/
 /********** About CSS **********/
