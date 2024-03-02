@@ -95,19 +95,19 @@
                         <div class="col-md-5">
                             <div class="form">
                                 <h3>Get A Quote</h3>
-                                <form>
-                                    <input class="form-control" type="text" placeholder="Your Name">
-                                    <input class="form-control" type="text" placeholder="Mobile Number">
-                                    <div class="control-group">
-                                        <select class="custom-select">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="73761afe-6c73-4d5d-9311-7a7b4a438d2f">
+                                    <input class="form-control" type="text" name="your name" placeholder="Your Name">
+                                    <input class="form-control" type="text" name="mobile no" placeholder="Mobile Number">
+                                        <select id="custom-select" oninput="email()">
                                             <option selected>Choose a service</option>
-                                            <option value="1">House Cleaning</option>
-                                            <option value="2">Apartment Cleaning</option>
-                                            <option value="3">Office Cleaning</option>
-                                            <option value="4">Gardening </option>
+                                            <option value="House Cleaning">House Cleaning</option>
+                                            <option value="Apartment Cleaning">Apartment Cleaning</option>
+                                            <option value="Office Cleaning">Office Cleaning</option>
+                                            <option value="Gardening ">Gardening </option>
                                         </select>
-                                    </div>
-                                    <textarea class="form-control" placeholder="Description (Area in sq.ft.)"></textarea>
+                                    <input type="text" name="service-selection" placeholder="Type of Service" style="display: none;" id="selection-display">
+                                    <textarea class="form-control" name="description" placeholder="Description (Area in sq.ft.)"></textarea>
                                     <button class="btn btn-block" onclick="sendEmail()">Send Your Query</button>
                                 </form>
                             </div>
