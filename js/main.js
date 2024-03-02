@@ -72,19 +72,10 @@
 
 
  
-    <script type="text/javascript">
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "happykartshop@gmail.com",
-                Password: "Payal@@2016",
-                To: 'mirchirunnertracker@outlook.com',
-                From: "happykartshop@gmail.com",
-                Subject: "Sending Email using javascript",
-                Body: "Well that was easy!!",
-            })
-                .then(function (message) {
-                    alert("mail sent successfully")
-                })
-        }
-    </script>
+    
+function email() 
+{
+    var a = document.getElementById("custom-select");
+    var b = document.getElementById("selection-display");
+    var c = b.value=a.value;    
+}
